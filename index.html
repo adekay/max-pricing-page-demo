@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Max Price Estimator</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <style>
+
+
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="#">Business</a>
+            <a href="#">About</a>
+            <a href="#">Pricing</a>
+            <a href="#">Partners</a>
+        </div>
+        <div class="logo">
+            <img src="logo_gold.png" alt="">
+        </div>
+        <div class="nav-right">
+            <a href="#">MAX Go</a>
+            <a href="#">Blog</a>
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <div class="content-left">
+            <h2>Fill form below to get the price estimate for your delivery</h2>
+            <div class="price">
+                <h1><span class="currency">₦</span><span id="value">0</span><span>.00</span></h1>
+                <input id="origin-input" class="controls" type="text" placeholder="Enter Pickup Address">
+
+                <input id="destination-input" class="controls" type="text" placeholder="Enter Delivery Address">
+            </div>
+            <p class="estimate"><span>*</span> Estimates are only valid for Lagos addresses.</p>
+        </div>
+        <div class="content-right">
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2018.</p>
+        <img src="logo_gold.png" alt="">
+        <p>MAX</p>
+    </div>
+
+   <script src="index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtV2KlSse_FX7McOVQj0an464VeR5WgLI&libraries=places&callback=initMap" async defer></script>
+</body>
+
+</html>
